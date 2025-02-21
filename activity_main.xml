@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cane_bg"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10sp">
+
+        <ImageButton
+            android:id="@+id/blue"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:background="@color/white"
+            android:contentDescription="blue gift box"
+            android:scaleType="centerCrop"
+            android:src="@drawable/blue_box"
+            android:onClick="image1" />
+
+        <ImageButton
+            android:id="@+id/pink"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/white"
+            android:contentDescription="pink gift box"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pink_box"
+            android:onClick="image2"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-thin"
+                android:gravity="center"
+                android:text="Please Select A Present In The Corner"
+                android:textColor="@color/redish"
+                android:textSize="36sp"
+                android:textStyle="bold"
+                android:background="#FFFFFF" />
+
+            <Button
+                android:id="@+id/ButtonClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="70sp"
+                android:backgroundTint="@color/redish"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:paddingHorizontal="40sp"
+                android:text="Clear Text"
+                android:textSize="28sp"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/green"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:contentDescription="green gift box"
+            android:scaleType="centerCrop"
+            android:src="@drawable/green_box" />
+
+        <ImageButton
+            android:id="@+id/yellow"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:contentDescription="yellow gift box"
+            android:scaleType="centerCrop"
+            android:src="@drawable/yellow_box" />
+
+    </RelativeLayout>
+</LinearLayout>
